@@ -1,0 +1,94 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Новости';
+
+block title
+    title Главная
+
+block content
+    //workarea
+    .workarea
+        //.fullwidth-bg-block
+        .fullwidth-bg-block.index-bl1(style="background-image:url('images/index-main-img.jpg'); height:480px;")
+            .fullwidth-bg-inner
+                .fullwidth-bg-ttl АОЭК Энергосети
+                .fullwidth-bg-desc Архангельская областная энергетическая компания
+        //end .fullwidth-bg-block
+
+        .container
+            //.news-prew-list
+            .news-prew-list
+                .news-prew-list-header
+                    .news-prew-list-ttl Новости
+                    a(href="#").btn-seeall смотреть все
+                    .prew-swiper-buttons
+                        .prew-swiper-buttons__next
+                            .prew-swiper-buttons__row
+                        .prew-swiper-buttons__prev
+                            .prew-swiper-buttons__row
+                .news-prew-list-wrapper
+                    .swiper-wrapper
+                        .swiper-slide
+                            .news-prew-list-item
+                                .news-prew-list-img(style="background-image:url('images/TEMP/news-img1.jpg')")
+                                .news-prew-list-body
+                                    .news-prew-list-item-date 3 июня
+                                    .news-prew-list-item-ttl АО «АрхоблЭнерго» эксплуатирует не только ДЭС
+                                    .news-prew-list-item-prev Целью создания и деятельности АО «АрхоблЭнерго» является эффективное функционирование малой энергетики
+                        .swiper-slide
+                            .news-prew-list-item
+                                .news-prew-list-img(style="background-image:url('images/TEMP/news-img2.jpg')")
+                                .news-prew-list-body
+                                    .news-prew-list-item-date 1 июня
+                                    .news-prew-list-item-ttl Общество осуществляет следующие регулируемые виды деятельности
+                                    .news-prew-list-item-prev Производство, передача и сбыт электро энергии; производство и передача тепловой энергии; горячее снабжение;
+                        .swiper-slide
+                            .news-prew-list-item
+                                .news-prew-list-img(style="background-image:url('images/TEMP/news-img3.jpg')")
+                                .news-prew-list-body
+                                    .news-prew-list-item-date 27 мая
+                                    .news-prew-list-item-ttl Конкурс детского творчества на Пинеге 2014 - "Да будет свет!"
+                                    .news-prew-list-item-prev В очередной раз, на реке Пинега, в п. Сосновка проводился конкурс детского творчества посвященного Дню энергетика - "Да будет свет!" Итоги конкурса будут подведены в День энергетика. Познакомиться с предоставленными ра
+                        .swiper-slide
+                            .news-prew-list-item
+                                .news-prew-list-img(style="background-image:url('images/TEMP/news-img1.jpg')")
+                                .news-prew-list-body
+                                    .news-prew-list-item-date 3 июня
+                                    .news-prew-list-item-ttl АО «АрхоблЭнерго» эксплуатирует не только ДЭС
+                                    .news-prew-list-item-prev Целью создания и деятельности АО «АрхоблЭнерго» является эффективное функционирование малой энергетики
+                        .swiper-slide
+                            .news-prew-list-item
+                                .news-prew-list-img(style="background-image:url('images/TEMP/news-img2.jpg')")
+                                .news-prew-list-body
+                                    .news-prew-list-item-date 1 июня
+                                    .news-prew-list-item-ttl Общество осуществляет следующие регулируемые виды деятельности
+                                    .news-prew-list-item-prev Производство, передача и сбыт электро энергии; производство и передача тепловой энергии; горячее снабжение;
+                        .swiper-slide
+                            .news-prew-list-item
+                                .news-prew-list-img(style="background-image:url('images/TEMP/news-img3.jpg')")
+                                .news-prew-list-body
+                                    .news-prew-list-item-date 27 мая
+                                    .news-prew-list-item-ttl Конкурс детского творчества на Пинеге 2014 - "Да будет свет!"
+                                    .news-prew-list-item-prev В очередной раз, на реке Пинега, в п. Сосновка проводился конкурс детского творчества посвященного Дню энергетика - "Да будет свет!" Итоги конкурса будут подведены в День энергетика. Познакомиться с предоставленными ра
+
+            //end .news-prew-list
+
+        //.fullwidth-bg-block
+        .fullwidth-bg-block(style="background-image:url('images/bg1.jpg'); height:480px;")
+            .container
+                .index-bl3
+                    .index-bl3__ttl Архангельская областная энергетическая компания
+                    .index-bl3__text Государственное унитарное предприятие объединило расположенные в районах области ведомственные и муниципальные дизельные электрические станции (ДЭС)
+                    a.btn-white(href="#") Читать далее
+        //end .fullwidth-bg-block
+
+        //.order-place
+        .order-place
+            .container
+                .order-place__wrapper
+                    .order-place__ttl Оформите заявку на подключение прямо сейчас
+                    a.btn-blue.js-lamp(href="#") Оформить заявку
+        //end .order-place
+
+    //end workarea

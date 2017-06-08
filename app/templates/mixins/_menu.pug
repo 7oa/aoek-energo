@@ -1,0 +1,5 @@
+- var nav = [{url: '#', name: 'О компании'}, {url: '#', name: 'Новости'}, {url: '#', name: 'Вакансии'}, {url: '#', name: 'Потребителям'}, {url: '#', name: 'Закупки'}, {url: '#', name: 'Раскрытие информации'}, {url: '#', name: 'Контакты'}];
+
+mixin navItem(url, name, current)
+    li.header-menu__items
+        a.header-menu__links(class=name==current ? 'header-menu__links_active' : '', href=url, title=name)= name

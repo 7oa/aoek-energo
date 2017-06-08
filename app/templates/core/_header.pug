@@ -1,0 +1,31 @@
+header.header
+    //.header-wrapper
+    .header-wrapper
+        //.header-first-row
+        .header-first-row
+            .container
+                .header-first-wrapper
+                    .header-logo-wrapper
+                        a.header-logo(href="/")
+                    .header-tel-wrapper
+                        .header-tel-desc Абонентское обслуживание
+                        .header-tel-num 8 (8182) <span>20 47 75</span>
+                    .header-search-wrapper
+                        form(action="" method="post" class="header-search")
+                            input.header-search__input(type="search" name="q")
+                            input.header-search__btn(type="submit" value="")
+                    .header-lk-wrapper
+                        a.header-lk(href="#")
+                            .header-lk__avatar
+                            .header-lk__content
+                                .header-lk__ttl Личный кабинет
+                                .header-lk__enter Вход
+        //end .header-first-row
+        //.header-menu-wrapper
+        .header-menu-wrapper
+            .container
+                ul.header-menu
+                    each i in nav
+                        +navItem(i.url, i.name, i.url = activeMenu)
+        //end .header-menu-wrapper
+    //end .header-wrapper

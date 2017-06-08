@@ -1,0 +1,146 @@
+.header {
+  background: $white;
+  height: 149px;
+  border-bottom: 1px solid $c-border;
+}
+.header-first-wrapper{
+  display: flex;
+}
+.header-first-row{
+  border-bottom: 1px solid $c-border;
+  padding-bottom: 18px;
+}
+.header-logo-wrapper{
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 66px;
+}
+.header-logo{
+  background-image: url(images/logo-header.png);
+  width: 186px;
+  height: 66px;
+  display: block;
+}
+.header-tel-wrapper{
+  padding-top: 28px;
+  color: $c-font-gr;
+  font-family: "RobotoMedium";
+  padding-right: 49px;
+}
+.header-tel-desc{
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.header-tel-num{
+  font-size: 27px;
+  line-height: 38px;
+  span{
+	color: $c-blue;
+  }
+}
+.header-search-wrapper{
+  padding-top: 38px;
+  padding-right: 43px;
+}
+.header-search{
+  position: relative;
+
+  &__input{
+	width: 230px;
+	height: 40px;
+	background-color: $c-font-bg;
+	border: 1px solid $c-border;
+	border-radius: 3px;
+	box-sizing: border-box !important;
+	padding: 0 30px 0 10px;
+	transition: .5s;
+
+	&:hover{
+	  border-width: 2px;
+	  transition: .5s;
+	}
+
+	&:focus{
+	  background-color: $white;
+	  border-width: 2px;
+	  transition: .5s;
+	}
+  }
+
+  &__btn{
+	position: absolute;
+	top: 11px;
+	right: 13px;
+	background-color: transparent;
+	border: none;
+	width: 20px;
+	height: 20px;
+	background-image: url('images/icon-search.png');
+	background-repeat: no-repeat;
+  }
+}
+.header-search__input:focus+.header-search__btn{
+  background-position: 0 -20px;
+}
+.header-lk-wrapper{
+  padding-top: 36px;
+}
+.header-lk{
+  display: flex;
+
+  &__avatar{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url('images/icon-lk.png');
+	padding-right: 15px;
+	width: 35px;
+	height: 35px;
+	margin-top: 4px;
+  }
+
+  &__content{
+	font-family: "RobotoMedium";
+	line-height: 20px;
+  }
+
+  &__ttl{
+	font-size: 15px;
+	color: $c-font-main;
+	margin-bottom: 2px;
+  }
+
+  &__enter{
+	font-size: 11px;
+	color: $c-font-gr;
+	text-transform: uppercase;
+  }
+
+  &:hover{
+	.header-lk__avatar{
+	  background-position: 0 -35px;
+	}
+  }
+}
+
+.header-menu{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0 10px 0 16px;
+
+  &__links{
+	font-family: "RobotoMedium";
+	font-size: 17px;
+	line-height: 50px;
+	color: $c-font-main;
+	transition: .2s;
+
+	&:hover,
+	&_active{
+	  color: $c-blue;
+	}
+  }
+}
