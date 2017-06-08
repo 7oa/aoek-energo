@@ -14,6 +14,24 @@
   width: 775px;
   margin: 0 auto;
 }
+.lamp{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/lamp.png');
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 300px;
+  transition: .5s;
+}
+.lamp-on{
+  background-position-y: 1px;
+  opacity: 0;
+}
+.lamp-off{
+  background-position-y: -300px;
+  opacity: 1;
+}
 .order-place{
   width: 100%;
   background-color: $c-font-bg;
@@ -23,10 +41,8 @@
   &__wrapper{
 	padding-top: 65px;
 	padding-bottom: 44px;
-	background-image: url('images/lamp.png');
-	background-repeat: no-repeat;
-	background-position-x: 676px;
-	background-position-y: -300px;
+
+	position: relative;
   }
 
   &__ttl{
@@ -36,7 +52,17 @@
 	width: 660px;
 	color: $c-font-main;
   }
+
+  &:hover{
+	.lamp-on{
+	  opacity: 1;
+	}
+	.lamp-off{
+	  opacity: 0;
+	}
+  }
 }
+
 .index-bl3{
   padding-top: 82px;
   width: 445px;
