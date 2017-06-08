@@ -139,9 +139,6 @@
 .news-prew-list-wrapper{
   overflow: hidden;
 }
-.news-prew-list-item{
-
-}
 .news-prew-list-img{
   @include bg-img();
   width: 305px;
@@ -149,6 +146,7 @@
   background-color: #3f516c;
   border-radius: 3px;
   margin-bottom: 12px;
+  transition: .5s;
 }
 .news-prew-list-item-date{
   color: $c-font-main;
@@ -167,6 +165,16 @@
   opacity: .7;
   max-height: 70px;
   overflow: hidden;
+}
+.news-prew-list-item{
+  &:hover{
+	.news-prew-list-item-ttl{
+		color: $c-font-dark;
+	}
+	.news-prew-list-img{
+	  opacity: .7;
+	}
+  }
 }
 .index-bl1{
   margin-bottom: 41px;
