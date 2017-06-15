@@ -23,8 +23,60 @@ textarea{
 .container{
   width: $w-container;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+.with-padding{
+  padding-left: 15px;
 }
 .fullwidth-bg-block{
   @include bg-img();
   width: 100%;
+}
+.page-ttl{
+  color: $white;
+
+  &__container{
+	position: relative;
+	height: 100%;
+  }
+
+  &__h1{
+	position: absolute;
+	bottom: 26px;
+	left: 15px;
+
+	h1{
+	  font: 35px/48px "OpenSans";
+	  font-weight: bold;
+	  margin: 0;
+	  padding: 0;
+	}
+  }
+}
+.page-wrpper{
+  font: 16px/28px "OpenSans";
+  padding: 13px 0 35px;
+  color: $c-font-text;
+
+  p{
+	margin-bottom: 28px;
+  }
+}
+.infull-right-content{
+  width: 445px;
+  float: right;
+  color: $c-font-main;
+
+  &__ttl{
+	font: 30px/40px "OpenSansSemiBold";
+	margin-bottom: 39px;
+  }
+  &__text{
+	font:15px/30px "OpenSans";
+	margin-bottom: 68px;
+  }
+}
+.ttl-1{
+  font: 30px/40px "OpenSansSemiBold";
+  color: $c-font-main;
 }
