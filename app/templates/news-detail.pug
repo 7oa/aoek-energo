@@ -1,0 +1,75 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Новости';
+
+block title
+    title Новости
+
+block content
+    //workarea
+    .workarea
+        //.fullwidth-bg-block
+        .fullwidth-bg-block.page-ttl(style="background-image:url('images/index-main-img.jpg'); height:280px;")
+            .container.page-ttl__container
+                a.page-ttl__back(href="#") Назад
+                .page-ttl__h1
+                    h1 Потребление электроэнергии в ЕЭС России в мае 2017 года увеличилось на 4,8 %
+                    .page-ttl__date Дата публикации: 3 июня 2017
+        //end .fullwidth-bg-block
+
+        //.page-wrpper
+        .page-wrpper
+            .container.with-padding
+                //.with-right-sidebar
+                .with-right-sidebar
+                    //.left-col
+                    .left-col
+                        .detail-news
+                            p По оперативным данным АО «СО ЕЭС», потребление электроэнергии в Единой энергосистеме России в мае 2017 года составило 80,0 млрд кВт*ч, что на 4,8 % больше объема потребления за май 2016 года.
+
+                            p Потребление электроэнергии в мае 2017 года в целом по России составило 81,6 млрд кВт•ч, что на 3,9 % больше, чем в мае 2016 года.
+
+                            img(src="images/TEMP/det-img.jpg")
+
+                            p Суммарные объемы потребления и выработки электроэнергии в целом по России складываются из показателей электропотребления и выработки объектов, расположенных в Единой энергетической системе России, и объектов, работающих в изолированных энергосистемах (Таймырской, Камчатской, Сахалинской, Магаданской, Чукотской, энергосистеме центральной и западной Якутии).
+
+                            p Фактические показатели работы энергосистем изолированных территорий представлены субъектами оперативно-диспетчерского управления указанных энергосистем:
+
+                            ul
+                                li С 1 января 2017 года показатели потребления и выработки по ЕЭС России и ОЭС Юга формируются с учетом Крымской энергосистемы.
+                                li В мае 2017 года электростанции ЕЭС России выработали 80,9 млрд кВт•ч, что на3,6 % больше чем в мае 2016 года.
+                                li Выработка электроэнергии в России в целом в мае 2017 года составила 82,5 млрд кВт•ч, что на 3,2 % больше выработки в мае прошлого года.
+
+                            .share-wrapper
+                                .share
+                                    .share-text Поделиться
+                                    .share-icons
+                    //end .left-col
+                    //.right-col
+                    .right-col
+                        .right-col-inner
+                            //.last-news
+                            .last-news
+                                .last-news__ttl Последние новости
+                                .last-news__list
+                                    .last-news__item
+                                        .last-news__date 7 июня
+                                        .last-news__prev Общество осуществляет следующие регулируемые виды деятельности
+                                    .last-news__item
+                                        .last-news__date 4 июня
+                                        .last-news__prev Конкурс детского творчества на Пинеге 2014 - "Да будет свет!"
+
+                                    .last-news__item
+                                        .last-news__date 2 июня
+                                        .last-news__prev АО «АрхоблЭнерго» эксплуатирует не только ДЭС
+
+                                .last-news__all
+                                    a.last-news__all-link(href="#") Все новости
+                            //end .last-news
+                    //end .right-col
+                //end .with-right-sidebar
+        //end .page-wrpper
+
+
+    //end workarea

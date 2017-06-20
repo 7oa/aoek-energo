@@ -1,0 +1,75 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Новости';
+
+block title
+    title Новости
+
+block content
+    //workarea
+    .workarea
+        //.fullwidth-bg-block
+        .fullwidth-bg-block.page-ttl(style="background-image:url('images/index-main-img.jpg'); height:240px;")
+            .container.page-ttl__container
+                .page-ttl__h1
+                    h1 Новости
+        //end .fullwidth-bg-block
+
+        .page-wrpper
+            .container
+                .news-list
+                    a.news-item(href="/news-detail.html")
+                        .news-item__img(style="background-image:url('images/TEMP/news-img1.jpg')")
+                        .news-item__prev
+                            .news-item__date 3 июня
+                            .news-item__ttl АО «АрхоблЭнерго» эксплуатирует не только ДЭС
+                            .news-item__text Целью создания и деятельности АО «АрхоблЭнерго» является эффективное функционирование малой энергетики
+
+                    a.news-item(href="/news-detail.html")
+                        .news-item__img(style="background-image:url('images/TEMP/news-img2.jpg')")
+                        .news-item__prev
+                            .news-item__date 3 июня
+                            .news-item__ttl Общество осуществляет следующие регулируемые виды деятельности
+                            .news-item__text Целью создания и деятельности АО «АрхоблЭнерго» является эффективное функционирование малой энергетики
+
+                    a.news-item(href="/news-detail.html")
+                        .news-item__img(style="background-image:url('images/TEMP/news-img3.jpg')")
+                        .news-item__prev
+                            .news-item__date 3 июня
+                            .news-item__ttl Конкурс детского творчества на Пинеге 2014 - "Да будет свет!"
+                            .news-item__text В очередной раз, на реке Пинега, в п. Сосновка проводился конкурс детского творчества посвященного Дню энергетика - "Да будет свет!" Итоги конкурса будут подведены в День энергетика.
+
+                    a.news-item(href="/news-detail.html")
+                        .news-item__img(style="background-image:url('images/TEMP/news-img1.jpg')")
+                        .news-item__prev
+                            .news-item__date 3 июня
+                            .news-item__ttl АО «АрхоблЭнерго» эксплуатирует не только ДЭС
+                            .news-item__text Целью создания и деятельности АО «АрхоблЭнерго» является эффективное функционирование малой энергетики
+
+                    a.news-item(href="/news-detail.html")
+                        .news-item__img(style="background-image:url('images/TEMP/news-img2.jpg')")
+                        .news-item__prev
+                            .news-item__date 3 июня
+                            .news-item__ttl Общество осуществляет следующие регулируемые виды деятельности
+                            .news-item__text Целью создания и деятельности АО «АрхоблЭнерго» является эффективное функционирование малой энергетики
+
+                    a.news-item(href="/news-detail.html")
+                        .news-item__img(style="background-image:url('images/TEMP/news-img3.jpg')")
+                        .news-item__prev
+                            .news-item__date 3 июня
+                            .news-item__ttl Конкурс детского творчества на Пинеге 2014 - "Да будет свет!"
+                            .news-item__text В очередной раз, на реке Пинега, в п. Сосновка проводился конкурс детского творчества посвященного Дню энергетика - "Да будет свет!" Итоги конкурса будут подведены в День энергетика. В очередной раз, на реке Пинега, в п. Сосновка проводился конкурс детского творчества посвященного Дню энергетика - "Да будет свет!" Итоги конкурса будут подведены в День энергетика.
+
+                .news-pagination
+                    .pagination
+                        a.pagination__link(href="#") назад
+                        a.pagination__link(href="#") 1
+                        a.pagination__link.pagination__link_active(href="#") 2
+                        a.pagination__link(href="#") 3
+                        span.pagination__link ...
+                        a.pagination__link(href="#") 8
+                        a.pagination__link(href="#") вперед
+
+
+    //end workarea

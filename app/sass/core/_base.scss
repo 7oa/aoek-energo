@@ -40,6 +40,14 @@ textarea{
 	height: 100%;
   }
 
+  &__back{
+  	color: $black;
+	font: 15px/48px "OpenSans";
+	position: absolute;
+	top: 13px;
+	margin-left: 17px;
+  }
+
   &__h1{
 	position: absolute;
 	bottom: 26px;
@@ -51,6 +59,12 @@ textarea{
 	  margin: 0;
 	  padding: 0;
 	}
+  }
+
+  &__date{
+	color: $white;
+	font: 15px/25px "OpenSansSemiBold";
+	margin-top: 16px;
   }
 }
 .page-wrpper{
@@ -79,4 +93,27 @@ textarea{
 .ttl-1{
   font: 30px/40px "OpenSansSemiBold";
   color: $c-font-main;
+}
+.grid-item{
+  //float: left;
+}
+.shadow-bl{
+  margin-bottom: 40px;
+}
+
+.with-right-sidebar{
+  display: flex;
+  justify-content: space-between;
+}
+.left-col{
+  width: 630px;
+  flex: 0 0 auto;
+}
+.right-col{
+  width: 305px;
+  flex: 0 0 auto;
+}
+.right-col-inner{
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(38, 97, 188, 0.2);
 }

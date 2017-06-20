@@ -1,0 +1,136 @@
+.news-list{
+  padding-top: 32px;
+  margin-bottom: 104px;
+}
+.news-item{
+  margin-bottom: 50px;
+  transition: .5s;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  position: relative;
+
+  &__img{
+	flex: 0 0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 220px;
+	margin-right: 37px;
+  }
+
+  &__prev{
+	padding-top: 32px;
+	padding-right: 20px;
+	color: $c-font-main;
+	max-height: 160px;
+	overflow: hidden;
+  }
+  &__date{
+	font: 15px/25px "OpenSans";
+	opacity: .7;
+	margin-bottom: 6px;
+  }
+  &__ttl{
+	font: 21px/28px "OpenSansSemiBold";
+	margin-bottom: 21px;
+  }
+  &__text{
+	font: 15px/25px "OpenSans";
+	opacity: .7;
+  }
+
+  &:after{
+	content: '';
+	position: absolute;
+	background-image: url('images/el.png');
+	width: 17px;
+	height: 23px;
+	right: 10px;
+	bottom: 10px;
+	opacity: 0;
+	transition: .8s;
+  }
+  &:hover{
+	box-shadow: 0 4px 10px rgba(38, 97, 188, 0.2);
+
+	.news-item__ttl{
+	  color: $c-font-dark;
+	}
+
+	&:after{
+	  opacity: 1;
+	}
+  }
+}
+.news-pagination{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pagination{
+  display: inline-block;
+
+  .pagination__link{
+	font: 15px/48px "OpenSans";
+	font-weight: bold;
+	color: $c-font-pg;
+	float: left;
+	padding: 0px 11px;
+	text-decoration: none;
+	transition: .5s;
+
+	&_active,
+	&:hover{
+	  color: $c-blue;
+	}
+  }
+
+}
+
+.share{
+  background-color: $c-font-bg;
+  border: 1px solid $c-border;
+  border-radius: 3px;
+  height: 65px;
+}
+.last-news{
+	padding-top: 42px;
+  &__ttl{
+	color: $black;
+	font: 22px/22px "OpenSans";
+	margin-bottom: 25px;
+	padding-right: 10px;
+	padding-left: 23px;
+  }
+
+  &__list{
+	border-bottom: 1px solid $c-border;
+	padding-right: 10px;
+	padding-left: 23px;
+  }
+
+  &__item{
+	margin-bottom: 26px;
+  }
+
+  &__date{
+	color: $c-font-main;
+	opacity: .7;
+	font: 15px/25px "OpenSans";
+	margin-bottom: 6px;
+  }
+
+  &__prev{
+	color: $c-font-main;
+	font: 14px/22px "OpenSans";
+  }
+
+  &__all{
+	padding: 9px 10px 14px 23px;
+  }
+  &__all-link{
+	color: $c-blue;
+	font: 17px/22px "OpenSans";
+  }
+}

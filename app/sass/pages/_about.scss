@@ -6,4 +6,58 @@
 }
 .about-bl3{
   padding-top: 24px;
+  margin-bottom: 60px;
+}
+.about-bl4{
+
+  &__ttl{
+	margin-bottom: 27px;
+  }
+}
+.shadow-bl{
+  width: 455px;
+  background-color: $white;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(38, 97, 188, 0.2);
+  box-sizing: border-box;
+  &__inner{
+	padding: 33px 35px 0px 25px;
+	color: $c-font-text;
+  }
+  &__ttl{
+	font-size: 14px;
+	line-height: 22px;
+  }
+  &__ttl-item{
+	margin-bottom: 35px;
+	display: flex;
+	justify-content: space-between;
+  }
+  &__ttl-litem{
+	flex: 1 0 295px;
+	font-family: "OpenSansSemiBold";
+  }
+  &__ttl-ritem{
+	font-family: "OpenSans";
+	float: right;
+  }
+  &__list{
+	margin-bottom: 30px;
+  }
+  &__item{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 17px;
+	font: 14px/22px "OpenSans";
+  }
+  &__litem{
+	flex: 0 0 280px;
+	background-image: url('images/list-img.png');
+	background-repeat: no-repeat;
+	padding-left: 36px;
+	background-position-y: 10px;
+  }
+  &__ritem{
+	text-align: right;
+  }
 }
