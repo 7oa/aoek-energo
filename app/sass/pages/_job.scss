@@ -1,0 +1,45 @@
+.job-list{
+  padding-top: 23px;
+  padding-bottom: 27px;
+}
+.job-item{
+  position: relative;
+  padding: 40px 45px 35px 45px;
+  margin-bottom: 38px;
+  transition: .5s;
+
+  &__ttl{
+	font: 21px/28px "OpenSansSemiBold";
+	margin-bottom: 24px;
+	color: $c-font-main;
+  }
+  &__text{
+	color: $c-font-text;
+	font: 15px/28px "OpenSans";
+  }
+  &__tel{
+	font: 14px/22px "OpenSansSemiBold";
+	color: $c-font-text;
+  }
+  &:after{
+	content: '';
+	position: absolute;
+	background-image: url('images/el.png');
+	width: 17px;
+	height: 23px;
+	right: 10px;
+	bottom: 10px;
+	opacity: 0;
+	transition: .8s;
+  }
+  &:hover{
+	box-shadow: 0 4px 10px rgba(38, 97, 188, 0.2);
+
+	&:after{
+	  opacity: 1;
+	}
+  }
+}
+.num{
+  color: $c-blue;
+}

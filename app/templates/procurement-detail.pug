@@ -1,0 +1,60 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Закупки';
+
+block title
+    title Закупки
+
+block content
+    //workarea
+    .workarea
+        //.fullwidth-bg-block
+        .fullwidth-bg-block.page-ttl(style="background-image:url('images/index-main-img.jpg'); height:240px;")
+            .container.page-ttl__container
+                a.page-ttl__back(href="#") Назад
+                .page-ttl__h1
+                    h1 Федеральный закон от 18.07.2011 № 223-ФЗ
+                    .page-ttl__date Дата публикации: 3 июня 2017
+        //end .fullwidth-bg-block
+
+        //.page-wrpper
+        .page-wrpper
+            .container.with-padding
+                .procurement-detail-page
+                    p Суммарные объемы потребления и выработки электроэнергии в целом по России складываются из показателей электропотребления и выработки объектов, расположенных в Единой энергетической системе России.
+
+                    p Объектов, работающих в изолированных энергосистемах (Таймырской, Камчатской, Сахалинской, Магаданской, Чукотской, энергосистеме центральной и западной Якутии)
+
+                    .files-download
+                        .files-download__head
+                            .files-download__menu
+                                .files-download__menu-item(href="#") Файлы
+                                a.files-download__menu-item.js-select-allfiles(href="#") Выбрать все
+                                a.files-download__menu-item(href="#") Скачать
+                        .files-download__body
+                            .files-download__docs-list
+                                .files-download__doc
+                                    input.checkbox(type="checkbox", id="checkbox")
+                                    label.files-download__doc-ttl(for="checkbox") Общество осуществляет следующие регулируемые виды деятельности
+                                    .files-download__doc-size 15 Кб
+                                .files-download__doc
+                                    input.checkbox(type="checkbox", id="checkbox")
+                                    label.files-download__doc-ttl(for="checkbox") Общество осуществляет следующие регулируемые виды деятельности
+                                    .files-download__doc-size 15 Кб
+                                .files-download__doc
+                                    .files-download__doc-ttl Конкурс детского творчества на Пинеге 2014 - "Да будет свет!"
+                                    .files-download__doc-size 24 Кб
+                                .files-download__doc
+                                    .files-download__doc-ttl Конкурс детского творчества на Пинеге 2014 - "Да будет свет!"
+                                    .files-download__doc-size 24 Кб
+                                .files-download__doc
+                                    .files-download__doc-ttl АО «АрхоблЭнерго» эксплуатирует не только ДЭС
+                                    .files-download__doc-size 3 Кб
+                                .files-download__doc
+                                    .files-download__doc-ttl АО «АрхоблЭнерго» эксплуатирует не только ДЭС
+                                    .files-download__doc-size 3 Кб
+
+        //end .page-wrpper
+
+    //end workarea

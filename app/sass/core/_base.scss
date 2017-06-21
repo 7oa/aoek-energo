@@ -12,6 +12,7 @@ body {
 }
 a{
   text-decoration: none;
+  color: $c-blue;
 }
 input:focus,
 textarea:focus{
@@ -69,7 +70,7 @@ textarea{
 }
 .page-wrpper{
   font: 16px/28px "OpenSans";
-  padding: 13px 0 35px;
+  //padding: 13px 0 35px;
   color: $c-font-text;
 
   p{
@@ -116,4 +117,19 @@ textarea{
 .right-col-inner{
   border-radius: 3px;
   box-shadow: 0 4px 10px rgba(38, 97, 188, 0.2);
+}
+.list-style1{
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  li{
+	background-image: url(images/list-img.png);
+	background-repeat: no-repeat;
+	padding-left: 36px;
+	background-position-y: 15px;
+	font-size: 15px;
+	line-height: 28px;
+	margin-bottom: 8px;
+  }
 }

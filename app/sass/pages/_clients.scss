@@ -1,0 +1,50 @@
+.clients-page{
+  padding-top: 57px;
+  margin-bottom: 155px;
+}
+.links-list-ttl{
+  font:22px/36px "OpenSans";
+  margin-bottom: 30px;
+}
+.link-item{
+  display: block;
+  background-color: $c-font-bg;
+  border: 1px solid $c-border;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background-image: url('images/link-bg.png');
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  font: 17px/28px "OpenSansSemiBold";
+  padding: 18px 30px 17px 35px;
+  color: $c-font-main;
+}
+.clients-archive-menu{
+  margin-top: 23px;
+}
+.archive-menu{
+  padding-top: 45px;
+
+  &__ttl{
+	text-align: center;
+	font: 22px/22px "OpenSans";
+	margin-bottom: 25px;
+	color: $black;
+  }
+  &__item{
+	color: $c-font-main;
+	border-bottom: 1px solid $c-border;
+	display: block;
+	text-align: center;
+	font: 20px/48px "OpenSans";
+
+	&:last-of-type{
+	  border-bottom: 0;
+	}
+
+	&:hover,
+	&_active{
+	  color: $c-blue;
+	}
+  }
+}

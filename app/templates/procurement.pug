@@ -1,0 +1,62 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Закупки';
+
+block title
+    title Закупки
+
+block content
+    //workarea
+    .workarea
+        //.fullwidth-bg-block
+        .fullwidth-bg-block.page-ttl(style="background-image:url('images/index-main-img.jpg'); height:240px;")
+            .container.page-ttl__container
+                .page-ttl__h1
+                    h1 Закупки
+        //end .fullwidth-bg-block
+
+        //.page-wrpper
+        .page-wrpper
+            .container.with-padding
+                //.with-right-sidebar
+                .with-right-sidebar
+                    //.left-col
+                    .left-col
+                        //.procurement-page
+                        .procurement-page
+                            .procurement-item
+                                .links-list-ttl Нормативные документы
+                                .links-list
+                                    a.link-item(href="/procurement-detail.html") Федеральный закон от 18.07.2011 № 223-ФЗ
+                                    a.link-item(href="/procurement-detail.html") Предложение о размере цен (тарифов), долгосрочных параметров регулирования
+                                    a.link-item(href="/procurement-detail.html") Положение о закупках
+                                    a.link-item(href="/procurement-detail.html") Федеральный закон от 18.07.2011 № 223-ФЗ
+
+                            .procurement-item
+                                .links-list-ttl Процедуры
+                                .links-list
+                                    a.link-item(href="/procurement-detail.html") Извещения о проведении закупочных процедур
+                                    a.link-item(href="/procurement-detail.html") Управление закупочной деятельностью
+                                    a.link-item(href="/procurement-detail.html") Реализация непрофильных активов
+                        //end .procurement-page
+                    //end .left-col
+                    //.right-col
+                    .right-col
+                        .right-col-inner
+                            //.last-news
+                            .archive-menu.procurement-archive-menu
+                                .archive-menu__ttl Архив
+                                .archive-menu__list
+                                    a.archive-menu__item(href="#") 2016
+                                    a.archive-menu__item.archive-menu__item_active(href="#") 2015
+                                    a.archive-menu__item(href="#") 2014
+                                    a.archive-menu__item(href="#") 2013
+                                    a.archive-menu__item(href="#") 2012
+
+                            //end .last-news
+                    //end .right-col
+                //end .with-right-sidebar
+        //end .page-wrpper
+
+    //end workarea

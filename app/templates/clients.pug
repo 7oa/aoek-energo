@@ -1,0 +1,61 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Потребителям';
+
+block title
+    title Потребителям
+
+block content
+    //workarea
+    .workarea
+        //.fullwidth-bg-block
+        .fullwidth-bg-block.page-ttl(style="background-image:url('images/index-main-img.jpg'); height:240px;")
+            .container.page-ttl__container
+                .page-ttl__h1
+                    h1 Потребителям
+        //end .fullwidth-bg-block
+
+        //.page-wrpper
+        .page-wrpper
+            .container.with-padding
+                //.with-right-sidebar
+                .with-right-sidebar
+                    //.left-col
+                    .left-col
+                        .clients-page
+                            .links-list-ttl Действующие тарифы на оказание услуг по передаче электрической энергии
+                            .links-list
+                                a.link-item(href="#") Индивидуальные тарифы
+                                a.link-item(href="#") Котловые тарифы
+
+                    //end .left-col
+                    //.right-col
+                    .right-col
+                        .right-col-inner
+                            //.last-news
+                            .archive-menu.clients-archive-menu
+                                .archive-menu__ttl Архив
+                                .archive-menu__list
+                                    a.archive-menu__item(href="#") 2016
+                                    a.archive-menu__item.archive-menu__item_active(href="#") 2015
+                                    a.archive-menu__item(href="#") 2014
+                                    a.archive-menu__item(href="#") 2013
+                                    a.archive-menu__item(href="#") 2012
+
+                            //end .last-news
+                    //end .right-col
+                //end .with-right-sidebar
+        //end .page-wrpper
+
+        //.order-place
+        .order-place
+            .fullwidth-bg-block(style="background-image:url('images/clients-bottom-bg.jpg');")
+                .container.with-padding
+                    .order-place__wrapper
+                        .order-place__ttl Подать заявку на технологическое присоединение
+                        a.btn-white(href="#") Оформить заявку
+        //end .order-place
+
+
+    //end workarea

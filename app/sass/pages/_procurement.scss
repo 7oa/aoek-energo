@@ -1,0 +1,51 @@
+.procurement-page{
+  padding-top: 56px;
+  padding-bottom: 23px;
+}
+.procurement-item{
+  margin-bottom: 70px;
+}
+.procurement-archive-menu{
+  margin-top: 116px;
+}
+.procurement-detail-page{
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+.files-download{
+  border-radius: 3px;
+  box-shadow: 0 4px 10px rgba(38, 97, 188, 0.2);
+}
+.files-download{
+  &__head{
+	border-bottom: 1px solid $c-border;
+	padding: 20px 24px;
+  }
+  &__body{
+	padding: 40px 0px 40px 24px;
+  }
+  &__menu{
+	display: flex;
+  }
+  &__menu-item{
+	margin-right: 44px;
+  }
+  &__docs-list{
+	display: flex;
+	flex-wrap: wrap;
+  }
+  &__doc{
+	width: 50%;
+	flex: 0 0 auto;
+	margin-bottom: 30px;
+	padding-right: 60px;
+	box-sizing: border-box;
+  }
+  &__doc-size{
+	font-size: 15px;
+	line-height: 25px;
+	font-family: "OpenSans";
+	color: $c-font-main;
+	opacity: .7;
+  }
+}

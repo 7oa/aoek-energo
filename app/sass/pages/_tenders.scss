@@ -1,0 +1,43 @@
+.tenders-page{
+  padding-top: 50px;
+  padding-bottom: 43px;
+}
+.tenders-table{
+  margin-bottom: 89px;
+}
+.tenders-pagination{
+  text-align: center;
+}
+
+.table-style1{
+  tr{
+	border-bottom: 1px solid $c-border;
+	transition: .5s;
+
+	&:hover{
+	  background-color: $c-font-bg;
+	}
+  }
+  td{
+	padding: 15px 10px;
+	font: 14px/22px "OpenSans";
+	vertical-align: top;
+
+	&:nth-child(1){
+	  width: 445px;
+	}
+	&:nth-child(2){
+	  width: 156px;
+	}
+	&:nth-child(3){
+	  width: 206px;
+	}
+  }
+
+  &__link{
+	font: 14px/22px "OpenSansSemiBold";
+  }
+}
+.green-text{
+  color: $c-completed;
+}

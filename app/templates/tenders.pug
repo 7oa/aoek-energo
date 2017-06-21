@@ -1,0 +1,84 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Раскрытие информации';
+
+block title
+    title Раскрытие информации
+
+block content
+    //workarea
+    .workarea
+        //.fullwidth-bg-block
+        .fullwidth-bg-block.page-ttl(style="background-image:url('images/index-main-img.jpg'); height:240px;")
+            .container.page-ttl__container
+                .page-ttl__h1
+                    h1 Извещения о проведени закупочных процедур
+        //end .fullwidth-bg-block
+        //.page-wrpper
+        .page-wrpper
+            //.container
+            .container.with-padding
+                .tenders-page
+                    .tenders-table
+                        table.table-style1
+                            tr
+                                td
+                                    a.table-style1__link(href="#") Проведение открытого тендера на парво заключение договора поставки нефтепродуктов
+                                td 9 февраля 2017
+                                td Тендерная документация
+                                td
+                                    span.green-text Завершена
+                            tr
+                                td
+                                    a.table-style1__link(href="#") Проведение открытого тендера на парво заключение договора поставки нефтепродуктов
+                                td 9 февраля 2017
+                                td Тендерная документация
+                                td
+                            tr
+                                td
+                                    a.table-style1__link(href="#") Проведение открытого тендера на парво заключение договора поставки нефтепродуктов
+                                td 9 февраля 2017
+                                td Тендерная документация
+                                td
+                            tr
+                                td
+                                    a.table-style1__link(href="#") Проведение открытого тендера на парво заключение договора поставки нефтепродуктов
+                                td 9 февраля 2017
+                                td Тендерная документация
+                                td
+                                    span.green-text Завершена
+                            tr
+                                td
+                                    a.table-style1__link(href="#") Проведение открытого тендера на парво заключение договора поставки нефтепродуктов
+                                td 9 февраля 2017
+                                td Тендерная документация
+                                td
+                                    span.green-text Завершена
+                            tr
+                                td
+                                    a.table-style1__link(href="#") Проведение открытого тендера на парво заключение договора поставки нефтепродуктов
+                                td 9 февраля 2017
+                                td Тендерная документация
+                                td
+                            tr
+                                td
+                                    a.table-style1__link(href="#") Проведение открытого тендера на парво заключение договора поставки нефтепродуктов
+                                td 9 февраля 2017
+                                td Тендерная документация
+                                td
+
+                    //.news-pagination
+                    .tenders-pagination
+                        .pagination
+                            a.pagination__link(href="#") назад
+                            a.pagination__link(href="#") 1
+                            a.pagination__link.pagination__link_active(href="#") 2
+                            a.pagination__link(href="#") 3
+                            span.pagination__link ...
+                            a.pagination__link(href="#") 8
+                            a.pagination__link(href="#") вперед
+                    //end .news-pagination
+            //end .container
+        //end .page-wrpper
+    //end workarea

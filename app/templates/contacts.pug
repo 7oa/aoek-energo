@@ -1,0 +1,50 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Контакты';
+
+block title
+    title Контакты
+
+block content
+    //workarea
+    .workarea
+        //.fullwidth-bg-block
+        .fullwidth-bg-block.page-ttl(style="background-image:url('images/index-main-img.jpg'); height:280px;")
+            .container.page-ttl__container
+                .page-ttl__h1
+                    h1 Наши контакты
+        //end .fullwidth-bg-block
+
+        .page-wrpper
+            .contacts-page
+                .contacts-map
+                    #map
+                    //map script
+                    include blocks/_map
+                    //end map script
+                .contacts-text
+                    .contacts-text__inner
+                        .contacts-text-block
+                            .contacts-text-block__ttl Адрес
+                            .contacts-text-block__text 163000 Архангельская обл.,<br>г. Архангельск, ул. Попова, 17
+                        .contacts-text-block
+                            .contacts-text-block__ttl Как связаться
+                            .contacts-text-block__text.
+                                Телефон: +7 (8182) 20-47-75<br>
+                                E-mail: <a href="mailto:info@aoek.ru">info@aoek.ru</a>
+                        .contacts-text-block
+                            .contacts-text-block__ttl Реквизиты
+                            .contacts-text-block__text
+                                .contacts-text-block__rec.
+                                    ОГРН 1162901063665<br>
+                                    ИНН 2901281167<br>
+                                    КПП 290101001<br>
+                                .contacts-text-block__rec.
+                                    Дата постановки на учёт 28 октября 2016 г.<br>
+                                    Налоговый орган Инспекция Федеральной налоговой службы по г.Архангельску
+                                .contacts-text-block__rec.
+                                    Уставный капитал 1 000 000,00 р
+                                .contacts-text-block__rec
+                                    a(href="#") Скачать
+    //end workarea

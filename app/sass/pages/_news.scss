@@ -1,5 +1,16 @@
+.news-page{
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+.detail-news{
+  padding-top: 13px;
+  padding-bottom: 134px;
+
+  &__text{
+	margin-bottom: 42px;
+  }
+}
 .news-list{
-  padding-top: 32px;
   margin-bottom: 104px;
 }
 .news-item{
@@ -66,7 +77,6 @@
 }
 .news-pagination{
   text-align: center;
-  margin-bottom: 30px;
 }
 .pagination{
   display: inline-block;
@@ -87,15 +97,9 @@
   }
 
 }
-
-.share{
-  background-color: $c-font-bg;
-  border: 1px solid $c-border;
-  border-radius: 3px;
-  height: 65px;
-}
 .last-news{
-	padding-top: 42px;
+  padding-top: 42px;
+  margin-top: 35px;
   &__ttl{
 	color: $black;
 	font: 22px/22px "OpenSans";
@@ -103,34 +107,47 @@
 	padding-right: 10px;
 	padding-left: 23px;
   }
-
   &__list{
 	border-bottom: 1px solid $c-border;
 	padding-right: 10px;
 	padding-left: 23px;
   }
-
-  &__item{
-	margin-bottom: 26px;
-  }
-
   &__date{
 	color: $c-font-main;
 	opacity: .7;
 	font: 15px/25px "OpenSans";
 	margin-bottom: 6px;
   }
-
   &__prev{
 	color: $c-font-main;
 	font: 14px/22px "OpenSans";
   }
-
   &__all{
 	padding: 9px 10px 14px 23px;
   }
   &__all-link{
 	color: $c-blue;
 	font: 17px/22px "OpenSans";
+  }
+  &__item{
+	margin-bottom: 26px;
+	display: block;
+  }
+}
+.share{
+  background-color: $c-font-bg;
+  border: 1px solid $c-border;
+  border-radius: 3px;
+  height: 65px;
+  padding: 17px 35px;
+  box-sizing: border-box;
+
+  &__text{
+	color: $c-font-main;
+	font: 14px/28px "OpenSans";
+	float: left;
+  }
+  &__icons{
+	float: right;
   }
 }
