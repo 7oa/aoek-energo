@@ -21,5 +21,20 @@ $(document).ready(function() {
 			}
 		});
 	}
+	$(".js-select-allfiles").click(function () {
+		if($(".js-check:checked").length==$(".js-check").length) $(".js-check").prop("checked", false);
+		else $(".js-check").prop("checked", true);
+		return false;
+	});
+
+	//плавное появление
+	if($('.js-show').length>0){
+		$('.js-show').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeIn',
+			offset: 200
+		});
+	}
+
+
 
 });

@@ -9,8 +9,12 @@
   margin-top: 116px;
 }
 .procurement-detail-page{
-  padding-top: 35px;
-  padding-bottom: 50px;
+  padding-top: 13px;
+  padding-bottom: 62px;
+
+  &__text{
+	margin-bottom: 40px;
+  }
 }
 .files-download{
   border-radius: 3px;
@@ -19,16 +23,16 @@
 .files-download{
   &__head{
 	border-bottom: 1px solid $c-border;
-	padding: 20px 24px;
+	padding: 13px 25px;
   }
   &__body{
-	padding: 40px 0px 40px 24px;
+	padding: 37px 25px 35px 25px;
   }
   &__menu{
 	display: flex;
   }
   &__menu-item{
-	margin-right: 44px;
+	margin-right: 50px;
   }
   &__docs-list{
 	display: flex;
@@ -37,9 +41,18 @@
   &__doc{
 	width: 50%;
 	flex: 0 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 26px;
 	padding-right: 60px;
 	box-sizing: border-box;
+
+	&:nth-child(even){
+	  padding-right: 0px;
+	  padding-left: 42px;
+	}
+  }
+  &__doc-ttl{
+	font: 14px/22px "OpenSans";
+	margin-bottom: 5px;
   }
   &__doc-size{
 	font-size: 15px;
@@ -47,5 +60,6 @@
 	font-family: "OpenSans";
 	color: $c-font-main;
 	opacity: .7;
+	margin-left: 30px;
   }
 }

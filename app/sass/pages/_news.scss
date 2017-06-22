@@ -29,6 +29,7 @@
 	width: 300px;
 	height: 220px;
 	margin-right: 37px;
+	transition: .5s;
   }
 
   &__prev{
@@ -68,6 +69,9 @@
 
 	.news-item__ttl{
 	  color: $c-font-dark;
+	}
+	.news-item__img{
+	  opacity: .7;
 	}
 
 	&:after{
