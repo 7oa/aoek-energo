@@ -21,6 +21,8 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	//выбрать все файлы
 	$(".js-select-allfiles").click(function () {
 		if($(".js-check:checked").length==$(".js-check").length) $(".js-check").prop("checked", false);
 		else $(".js-check").prop("checked", true);
@@ -30,11 +32,9 @@ $(document).ready(function() {
 	//плавное появление
 	if($('.js-show').length>0){
 		$('.js-show').addClass("hidden").viewportChecker({
-			classToAdd: 'visible animated fadeIn',
+			classToAdd: 'visible animated fadeInUp',
+			classToRemove: 'hidden',
 			offset: 200
 		});
 	}
-
-
-
 });
