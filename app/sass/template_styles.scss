@@ -4,7 +4,6 @@
 @import "core/fonts";
 @import "core/grid";
 
-@import "plugins/datepicker.min";
 @import "plugins/swiper.min";
 @import "plugins/animate";
 
@@ -14,7 +13,7 @@
 @import "core/images";
 @import "core/buttons";
 
-@import "blocks/callback";
+@import "blocks/form";
 
 @import "pages/index";
 @import "pages/about";
@@ -24,5 +23,3 @@
 @import "pages/procurement";
 @import "pages/tenders";
 @import "pages/contacts";
-
-@import "core/adaptive";

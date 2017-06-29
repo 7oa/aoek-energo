@@ -1,0 +1,108 @@
+.single-form{
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.form-wrapper{
+  width: 530px;
+  margin: 0 auto;
+  background-color: $c-font-bg;
+  border: 1px solid $c-border;
+  border-radius: 3px;
+  &__body{
+	padding: 40px 50px;
+  }
+  &__ttl{
+	text-align: center;
+	font: 22px/36px "OpenSans";
+	margin-bottom: 30px;
+  }
+  &__footer{
+	border-top: 1px solid $c-border;
+	text-align: center;
+	padding: 7px;
+	font: 14px/28px "OpenSans";
+  }
+}
+.input-wrapper{
+  margin-bottom: 30px;
+}
+.input-line{
+  margin-bottom: 10px;
+}
+.input{
+  box-sizing: border-box;
+  background-color: $white;
+  border: 1px solid $c-border;
+  border-radius: 3px;
+  width: 100%;
+  font: 16px/68px "OpenSans";
+  color: $c-font-text;
+  padding: 0 22px;
+  transition: .5s;
+  &:focus{
+	border: 2px solid $c-blue;
+  }
+}
+.buttons-wrapper{
+  &_login{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+  }
+  &__forget-pass{
+	padding-left: 20px;
+  }
+  &__forget-pass-link{
+	font: 14px/28px "OpenSans";
+	&:hover{
+	  text-decoration: underline;
+	}
+  }
+  &__login{
+	width: 170px;
+	flex: 0 0 auto;
+  }
+}
+.submit{
+  background-color: $c-blue;
+  border: none;
+  border-radius: 3px;
+  color: $white;
+  font: 16px/60px "OpenSans";
+  width: 100%;
+  transition: .5s;
+  &:hover{
+	background-color: $c-btn-hover;
+  }
+  &[disabled]{
+	background-color: $c-btn-disabled;
+	cursor: no-drop;
+  }
+}
+.reg-menu{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-bottom: 1px solid $c-font-gr;
+}
+.reg-menu__item{
+  color: $c-font-gr;
+  font: 16px/28px "OpenSans";
+  margin-bottom: -2px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: .5s;
+  border-bottom: 3px solid transparent;
+  &:hover,
+  &.active{
+	color: $c-blue;
+	border-bottom: 3px solid $c-blue;
+  }
+}
+.js-tab-item{
+  display: none;
+  &:first-of-type{
+	display: block;
+  }
+}

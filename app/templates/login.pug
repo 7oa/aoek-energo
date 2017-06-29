@@ -1,0 +1,34 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = '';
+
+block title
+    title Вход
+
+block content
+    //workarea
+    .workarea
+        .single-form
+            .form-wrapper
+                .form-wrapper__body
+                    .form-wrapper__ttl.
+                        Вход в личный кабинет<br>
+                        АОЭК Энергосети
+                    form.form1
+                        .input-wrapper
+                            .input-line
+                                input.input(type="text" placeholder="Логин*")
+                            .input-line
+                                input.input(type="password" placeholder="Пароль*")
+                        .buttons-wrapper.buttons-wrapper_login
+                            .buttons-wrapper__forget-pass
+                                a.buttons-wrapper__forget-pass-link(href="#") Забыли пароль?
+                            .buttons-wrapper__login
+                                input.submit(type="submit" value="Вход")
+                .form-wrapper__footer Нет аккаунта?
+                    |
+                    |
+                    a(href="#") Зарегистрироваться
+
+    //end workarea

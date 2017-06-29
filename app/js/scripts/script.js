@@ -37,4 +37,14 @@ $(document).ready(function() {
 			offset: 200
 		});
 	}
+
+	if($(".js-tab-link").length>0){
+		$(".js-tab-link").click(function () {
+			var tab_id = $(this).data("tab");
+			$(".js-tab-link").removeClass("active");
+			$(this).addClass("active");
+			$(".js-tab-item").hide();
+			$("#"+tab_id).show();
+		});
+	}
 });

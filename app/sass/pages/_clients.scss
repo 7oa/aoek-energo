@@ -48,3 +48,27 @@
 	}
   }
 }
+.connect-bg{
+  position: relative;
+  &:before{
+	@include bg-img();
+	content: "";
+	background-image: url('images/connect-hover.jpg');
+	position: absolute;
+	top:0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .5s;
+	transition-timing-function: ease-in-out;
+  }
+}
+.client-connect{
+  &:hover{
+	.connect-bg:before{
+	  opacity: 1;
+	}
+  }
+}

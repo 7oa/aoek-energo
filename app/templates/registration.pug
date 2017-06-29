@@ -1,0 +1,66 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = '';
+
+block title
+    title Вход
+
+block content
+    //workarea
+    .workarea
+        .single-form
+            .form-wrapper
+                .form-wrapper__body
+                    .form-wrapper__ttl.
+                        Регистрация в<br>
+                        АОЭК Энергосети
+                    .reg-menu
+                        .reg-menu__item.active.js-tab-link(data-tab="tab1") Физическое лицо
+                        .reg-menu__item.js-tab-link(data-tab="tab2") ИП
+                        .reg-menu__item.js-tab-link(data-tab="tab3") Юридическое лицо
+                    .tabs-list
+                        .js-tab-item#tab1
+                            form.form1
+                                .input-wrapper
+                                    .input-line
+                                        input.input(type="text" placeholder="Фамилия*")
+                                    .input-line
+                                        input.input(type="text" placeholder="Имя*")
+                                    .input-line
+                                        input.input(type="text" placeholder="Отчество*")
+                                    .input-line
+                                        input.input(type="text" placeholder="Отчество*")
+                                    .input-line
+                                        input.input(type="text" placeholder="СНИЛС*")
+                                .buttons-wrapper.buttons-wrapper_reg
+                                        input.submit(type="submit" value="Зарегистрироваться" disabled)
+                        .js-tab-item#tab2
+                            form.form1
+                                .input-wrapper
+                                    .input-line
+                                        input.input(type="text" placeholder="Фамилия*")
+                                    .input-line
+                                        input.input(type="text" placeholder="Имя*")
+                                    .input-line
+                                        input.input(type="text" placeholder="Отчество*")
+                                    .input-line
+                                        input.input(type="text" placeholder="E-mail*")
+                                    .input-line
+                                        input.input(type="text" placeholder="ОГРНИП*")
+                                .buttons-wrapper.buttons-wrapper_reg
+                                    input.submit(type="submit" value="Зарегистрироваться")
+                        .js-tab-item#tab3
+                            form.form1
+                                .input-wrapper
+                                    .input-line
+                                        input.input(type="text" placeholder="E-mail*")
+                                    .input-line
+                                        input.input(type="text" placeholder="Имя*")
+                                    .input-line
+                                        input.input(type="text" placeholder="ИНН*")
+                                .buttons-wrapper.buttons-wrapper_reg
+                                    input.submit(type="submit" value="Зарегистрироваться")
+                .form-wrapper__footer Для регистрации заполните все поля
+
+    //end workarea
