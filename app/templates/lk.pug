@@ -1,0 +1,139 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = '';
+
+block title
+    title Личный кабинет
+
+block content
+    //workarea
+    .workarea
+        //.lk-page
+        .lk-page
+            //.container_lk
+            .container_lk
+                //.lk-block
+                .lk-block
+                    //.lk-block__head
+                    .lk-block__head
+                        .lk-block__ttl Личный кабинет
+                        .lk-block__head-button
+                            a.btn-edit(href="#") Редактировать
+                    //end .lk-block__head
+                    //.lk-block__body
+                    .lk-block__body
+                        .lk-info
+                            .lk-info__left
+                                .lk-info__ttl Общая информация
+                                .lk-info__table-wrapper
+                                    table.lk-info__table
+                                        tr
+                                            th Фамилия
+                                            td Иванов
+                                        tr
+                                            th Имя
+                                            td Петр
+                                        tr
+                                            th Отчество
+                                            td Сергеевич
+                                        tr
+                                            th E-mail
+                                            td ivanov@mail.com
+                                        tr
+                                            th СНИЛС
+                                            td 111-254-647 84
+                            .lk-info__right
+                                .lk-info__ttl Паспорт
+                                .lk-info__table-wrapper
+                                    table.lk-info__table
+                                        tr
+                                            th Серия/номер
+                                            td 11-12 / 487548
+                                        tr
+                                            th Кем выдан
+                                            td
+                                                span.no-info не указано
+                                        tr
+                                            th Когда выдан
+                                            td 11.11.2011
+                                        tr
+                                            th Адрес<br>регистрации
+                                            td г. Архангельск, пр-т Ломоносова 324/5, 34
+                                        tr
+                                            th Адрес<br>проживания
+                                            td г. Архангельск, пр-т Ломоносова 324/5, 34
+                    //end .lk-block__body
+                //end .lk-block
+                //.lk-block
+                .lk-block
+                    //.lk-block__head
+                    .lk-block__head
+                        .lk-block__ttl Мои заявки
+                        .lk-block__head-button
+                            a.btn-edit(href="#") Создать заявку
+                    //end .lk-block__head
+                    //.lk-block__body
+                    .lk-block__body
+                        .my-requests-wrapper
+                            table.my-requests-table
+                                tr
+                                    th(width="160") Номер
+                                    th(width="310") Адрес
+                                    th(width="160") Дата подачи
+                                    th(width="170") Обновлено
+                                    th
+                                tr
+                                    td
+                                        a(href="/req-detail.html") 1 785
+                                    td Адрес 1
+                                    td 22.05.2017
+                                    td 27.06.2017
+                                    td
+                                        span.req-green Завершена
+                                tr
+                                    td
+                                        a(href="/req-detail.html") 1 785
+                                    td Адрес 1
+                                    td 22.05.2017
+                                    td 27.06.2017
+                                    td
+                                        span.req-red Отклонена
+                                tr
+                                    td
+                                        a(href="/req-detail.html") 1 785
+                                    td Адрес 1
+                                    td 22.05.2017
+                                    td 27.06.2017
+                                    td
+                                        span.req-grey Черновик
+                                tr
+                                    td
+                                        a(href="/req-detail.html") 1 785
+                                    td Адрес 1
+                                    td 22.05.2017
+                                    td 27.06.2017
+                                    td
+                                        span.req-blue В обработке
+                                tr
+                                    td
+                                        a(href="/req-detail.html") 1 785
+                                    td Адрес 1
+                                    td 22.05.2017
+                                    td 27.06.2017
+                                    td
+                                        span.req-blue В обработке
+                        .my-requests-pagination
+                            .pagination
+                                a.pagination__link(href="#") назад
+                                a.pagination__link(href="#") 1
+                                a.pagination__link.pagination__link_active(href="#") 2
+                                a.pagination__link(href="#") 3
+                                span.pagination__link ...
+                                a.pagination__link(href="#") 8
+                                a.pagination__link(href="#") вперед
+                    //end .lk-block__body
+                //end .lk-block
+            //end //.container_lk
+        //end .lk-page
+    //end workarea

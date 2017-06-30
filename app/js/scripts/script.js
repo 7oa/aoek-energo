@@ -37,7 +37,7 @@ $(document).ready(function() {
 			offset: 200
 		});
 	}
-
+	//табы
 	if($(".js-tab-link").length>0){
 		$(".js-tab-link").click(function () {
 			var tab_id = $(this).data("tab");
@@ -47,4 +47,23 @@ $(document).ready(function() {
 			$("#"+tab_id).show();
 		});
 	}
+	$(".input-line_error").click(function () {
+		$(this).removeClass("input-line_error");
+	});
+
+	/*if($(".js-form").length>0){
+
+	}
+	$(".js-form").each(function(){
+		var req = $(this).find(".input[data-required='Y']");
+		var submit = $(this).find(".js-submit");
+		var req_l = req.length;
+		$(req).each(function () {
+			if($(this).val()==""){
+				$(this).addClass("empty");
+			}
+		});
+		var empty = $(this).find(".empty").length;
+		if(empty!==0) submit.attr("disabled", true);
+	});*/
 });

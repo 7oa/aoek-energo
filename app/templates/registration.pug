@@ -21,46 +21,47 @@ block content
                         .reg-menu__item.js-tab-link(data-tab="tab3") Юридическое лицо
                     .tabs-list
                         .js-tab-item#tab1
-                            form.form1
+                            form.form1.js-form
                                 .input-wrapper
                                     .input-line
-                                        input.input(type="text" placeholder="Фамилия*")
+                                        input.input(type="text" placeholder="Фамилия*" data-required="Y")
                                     .input-line
-                                        input.input(type="text" placeholder="Имя*")
+                                        input.input(type="text" placeholder="Имя*" data-required="Y")
                                     .input-line
-                                        input.input(type="text" placeholder="Отчество*")
+                                        input.input(type="text" placeholder="Отчество*" data-required="Y")
+                                    .input-line.input-line_error
+                                        input.input(type="text" placeholder="E-mail*" data-required="Y")
                                     .input-line
-                                        input.input(type="text" placeholder="Отчество*")
-                                    .input-line
-                                        input.input(type="text" placeholder="СНИЛС*")
+                                        input.input(type="text" placeholder="СНИЛС*" data-required="Y")
                                 .buttons-wrapper.buttons-wrapper_reg
-                                        input.submit(type="submit" value="Зарегистрироваться" disabled)
+                                        input.submit(type="submit" value="Зарегистрироваться")
                         .js-tab-item#tab2
-                            form.form1
+                            form.form1.js-form
                                 .input-wrapper
                                     .input-line
-                                        input.input(type="text" placeholder="Фамилия*")
+                                        input.input(type="text" placeholder="Фамилия*" data-required="Y")
                                     .input-line
-                                        input.input(type="text" placeholder="Имя*")
+                                        input.input(type="text" placeholder="Имя*" data-required="Y")
                                     .input-line
-                                        input.input(type="text" placeholder="Отчество*")
+                                        input.input(type="text" placeholder="Отчество*" data-required="Y")
                                     .input-line
-                                        input.input(type="text" placeholder="E-mail*")
+                                        input.input(type="text" placeholder="E-mail*" data-required="Y")
                                     .input-line
-                                        input.input(type="text" placeholder="ОГРНИП*")
+                                        input.input(type="text" placeholder="ОГРНИП*" data-required="Y")
                                 .buttons-wrapper.buttons-wrapper_reg
-                                    input.submit(type="submit" value="Зарегистрироваться")
+                                    input.submit(type="submit" value="Зарегистрироваться" disabled)
                         .js-tab-item#tab3
-                            form.form1
+                            form.form1.js-form
                                 .input-wrapper
                                     .input-line
                                         input.input(type="text" placeholder="E-mail*")
                                     .input-line
-                                        input.input(type="text" placeholder="Имя*")
+                                        input.input(type="text" placeholder="ОГРН*")
                                     .input-line
                                         input.input(type="text" placeholder="ИНН*")
                                 .buttons-wrapper.buttons-wrapper_reg
                                     input.submit(type="submit" value="Зарегистрироваться")
-                .form-wrapper__footer Для регистрации заполните все поля
+                .form-wrapper__footer
+                    span.fill-all Для регистрации заполните все поля
 
     //end workarea

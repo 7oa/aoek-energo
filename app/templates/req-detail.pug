@@ -1,0 +1,190 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = '';
+
+block title
+    title Заявка
+
+block content
+    //workarea
+    .workarea
+        //.req-page
+        .req-page
+            //.container_lk
+            .container-lk
+                //.lk-block
+                .lk-block
+                    .req-block
+                        .req-block__head
+                            .req-block__inner
+                                a.req-block__back(href="#") Назад
+                                .req-block__btn
+                                    a.btn-edit.mr10(href="#") Копировать
+                                    a.btn-del(href="#")
+                                .req-block__ttl Заявка 3132
+                                ul.list-style2
+                                    li Присоединение энергепринимающих устройств (постоянное)
+                        table.my-requests-table
+                            tr
+                                th(width="110") Дата
+                                th(width="630") Комментарий
+                                th
+                            tr
+                                td 22.05.2017
+                                td договор 1012 от 16.02.2017
+                                td
+                                    span.req-green Заключен договор
+                            tr
+                                td 22.05.2017
+                                td Ведутся работы по подготовке требований
+                                td
+                                    span.req-blue В обработке
+                            tr
+                                td 22.05.2017
+                                td Заявка принята и передана на рассмотрение
+                                td
+                                    span.req-grey Заявка принята
+
+                //.lk-block
+                .lk-block
+                    .req-block__inner2
+                        .req-block__head2
+                            .req-block__ttl Сведения о подключаемом объекте
+                        table.lk-block-tbl1
+                            tr
+                                th(width="380") Причина присоединения
+                                td Новое строительство
+                            tr
+                                th Наименование энергопринимающих устройств для присоединения
+                                td Устройство 1
+                            tr
+                                th Адрес
+                                td Адрес 1
+                            tr
+                                th Гарантирующий поставщик (энергосбытовая организация), с которым планируется заключение договора энергоснабжения (купли-продажи электрической энергии (мощности)
+                                td Поставщик 1
+                            tr
+                                th Вид договора
+                                td Договор на ТП
+                //end .lk-block
+                //.lk-block
+                .lk-block
+                    .req-block
+                        .req-block__head
+                            .req-block__inner3
+                                .req-block__ttl Характеристики подключения
+                        table.my-requests-table
+                            tr
+                                th Макс. мощность<br>прис. устройств,<br>кВт
+                                th Ранее прис.<br>мощность,<br>кВт
+                                th Общая макс.<br>мощность энергоприн.<br>устр-в, кВт
+                                th Уровень<br>напряжения,<br>кВ
+                                th Категория<br>надежности
+                                th Характер нагрузки<br>(вид экономической<br>деятельности)
+                            tr
+                                td .
+                                td
+                                td
+                                td
+                                td
+                                td
+                            tr
+                                td .
+                                td
+                                td
+                                td
+                                td
+                                td
+                //end .lk-block
+                //.lk-block
+                .lk-block
+                    .req-block
+                        .req-block__head
+                            .req-block__inner3
+                                .req-block__ttl Сроки проектирования и поэтапного введения в эксплуатацию
+                        table.my-requests-table
+                            tr(style="vertical-align:top;")
+                                th Этап (очередь)<br>строительства
+                                th Планируемый срок<br>проектирования<br>энергопринимающего<br>устройства (месяц, год)
+                                th Планируемый срок введения<br>энергопринимающего<br>устройства в эксплуатацию<br>(месяц, год)
+                                th Максимальная мощность<br>энергопринимающего<br>устройства, кВт
+                                th Категория<br>надежности
+                            tr
+                                td .
+                                td
+                                td
+                                td
+                                td
+                            tr
+                                td .
+                                td
+                                td
+                                td
+                                td
+                //end .lk-block
+                //.lk-block
+                .lk-block
+                    .req-block
+                        .req-block__head
+                            .req-block__inner4
+                                .req-block__inner5
+                                    .req-block__ttl.req-block__ttl_mb10 Сроки проектирования и поэтапного введения в эксплуатацию
+                                    .req-block__text.
+                                        Авансовый платеж вносится в размере 5 процентов размера платы за технологическое присоединение осуществляется беспроцентная рассрочка платежа в размере 95 процентов платы за технологическое присоединение с условием ежеквартального внесения платы равными долями от общей суммы рассрочки на период до 3 лет со дня подписания сторонами акта об осуществлении технологического присоединения
+                                .req-block__inner6
+                                    .req-block__ttl.req-block__ttl_mb30 Документы, приложенные при оформлении заявки
+                                    //.docs-list
+                                    .docs-list.req-block__docs
+                                        .doc-item
+                                            .doc-item__ttl Общество осуществляет следующие регулируемые виды деятельности
+                                            .doc-item__size 15 Кб
+                                        .doc-item
+                                            .doc-item__ttl Общество осуществляет следующие регулируемые виды деятельности
+                                            .doc-item__size 15 Кб
+                                        .doc-item
+                                            .doc-item__ttl Общество осуществляет следующие регулируемые виды деятельности
+                                            .doc-item__size 15 Кб
+                                    //end .docs-list
+                                .req-block__inner6
+                                    .add-doc
+                                        a.btn-edit.btn-edit_230(href="#") Прикрепить документы
+                                    .req-block__ttl.req-block__ttl_mb30 Документы, приложенные при обработке заявки
+                                    .docs-list.req-block__docs
+                                        .doc-item
+                                            .doc-item__ttl Общество осуществляет следующие регулируемые виды деятельности
+                                            .doc-item__size 15 Кб
+                                .req-block__inner5
+                                    .req-block__ttl.req-block__ttl_mb10 Ваш комментарий к заявке
+                                    .req-block__text.
+                                        Авансовый платеж вносится в размере 5 процентов размера платы за технологическое присоединение
+                                        осуществляется беспроцентная рассрочка платежа в размере 95 процентов платы за технологическое присоединение с условием ежеквартального внесения платы равными долями от общей суммы рассрочки на период до 3 лет со дня подписания сторонами акта об осуществлении технологического присоединения
+            //end .container_lk
+            //.req_feedback
+            .req-feedback-wrapper
+                .container-lk
+                    .req-feedback
+                        .req-feedback__button
+                            a.btn-edit(href="#") Задать вопрос
+                        .req-feedback__ttl Обратная связь
+                        //.message-list
+                        .message-list
+                            .message
+                                .message__autor.message__autor_you Иванов Петр Сергеевич (Вы)
+                                .message__date 19.04.2017 - 21:27
+                                .message__text 95 процентов платы за технологическое присоединение с условием ежеквартального внесения платы равными долями от общей суммы рассрочки на период до 3 лет со дня подписания сторонами акта об осуществлении технологического присоединения
+                            .message
+                                .message__autor.message__autor_admin Евгений (Администратор)
+                                .message__date 20.04.2017 - 10:30
+                                .message__text Авансовый платеж вносится в размере 5 процентов размера платы за технологическое присоединение осуществляется беспроцентная рассрочка платежа в размере
+                        //end .message-list
+                        .req-feedback__feedback
+                            textarea.textarea.req-feedback__textarea(placeholder="Введите текст сообщения")
+                            .req-feedback__feedback-button
+                                .req-feedback__captcha
+                                    img(src="images/TEMP/captcha.png")
+                                .req-feedback__submit
+                                    input.submit(type="submit" value="Отправить")
+            //end .req_feedback
+        //end .req-page
+    //end workarea

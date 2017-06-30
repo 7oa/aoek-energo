@@ -136,6 +136,20 @@ textarea{
 	margin-bottom: 8px;
   }
 }
+.list-style2{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li{
+	background-image: url(images/list-img.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	background-position-y: 10px;
+	font-size: 14px;
+	line-height: 22px;
+	color: $c-blue;
+  }
+}
 
 input.checkbox{
   display:none;
@@ -168,4 +182,27 @@ input.checkbox:checked + label::before {
 }
 input.checkbox:checked + label{
   color: $c-blue;
+}
+.docs-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.doc-item{
+  width: 50%;
+  background-image: url('images/i-doc.png');
+  background-repeat: no-repeat;
+  background-position-y: 6px;
+  padding-left: 40px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  color: $c-font-main;
+  &__ttl{
+	font: 14px/22px "OpenSans";
+	padding-right: 40px;
+	margin-bottom: 5px;
+  }
+  &__size{
+	font: 15px/25px "OpenSans";
+	opacity: .7;
+  }
 }
