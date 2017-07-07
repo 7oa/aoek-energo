@@ -66,4 +66,19 @@ $(document).ready(function() {
 		var empty = $(this).find(".empty").length;
 		if(empty!==0) submit.attr("disabled", true);
 	});*/
+
+	$(".js-select").click(function(){
+		var opt = $(this).next(".select__ul");
+		var select = $(this).parent();
+		select.toggleClass("open");
+		opt.slideToggle();
+
+	});
+	$(".js-select-item").click(function () {
+		var val = $(this).text();
+		var select = $(this).parents(".select");
+		select.children(".js-select").text(val);
+		select.children(".js-select-save").val(val);
+		select.removeClass("open").find(".select__ul").slideUp();
+	})
 });

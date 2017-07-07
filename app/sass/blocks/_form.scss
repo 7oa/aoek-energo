@@ -38,10 +38,20 @@
   color: $c-font-text;
   padding: 0 22px;
   transition: .5s;
-
+  &_sm{
+	font: 14px/48px "OpenSans";
+  }
 
   &:focus{
 	border: 2px solid $c-blue;
+  }
+
+  &_date{
+	position: absolute;
+	padding-right: 60px;
+	&:focus{
+	  border: 1px solid $c-border;
+	}
   }
 }
 .input-line{
@@ -104,6 +114,13 @@
 	background-color: $c-btn-disabled;
 	cursor: no-drop;
   }
+  &_save{
+	background-color: $c-green;
+
+	&:hover{
+	  background-color: $c-green2;
+	}
+  }
 }
 .reg-menu{
   display: flex;
@@ -141,4 +158,179 @@
   background-color: $white;
   border: 1px solid $c-border;
   border-radius: 3px;
+  transition: .5s;
+  &_w{
+	width: 100%;
+	min-height: 67px;
+	font: 14px/25px "OpenSans";
+	padding: 10px 20px;
+  }
+  &:focus{
+	border: 2px solid $c-blue;
+  }
+}
+.form-row{
+  display: flex;
+  margin-bottom: 30px;
+  &__label{
+	flex: 1 1 auto;
+	color: $c-font-main;
+	font: 13px/20px "OpenSans";
+	padding-top: 13px;
+	padding-right: 7px;
+  }
+  &__field{
+	width: 420px;
+	flex: 0 0 auto;
+  }
+
+}
+.date-select{
+  display: flex;
+  width: 170px;
+  position: relative;
+  &__button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	width: 48px;
+	height: 50px;
+	border: 1px solid $c-border;
+	border-radius: 0 3px 3px 0;
+	background-image: url('images/calendar.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+  }
+}
+.input_date:focus + .date-select__button{
+  border: 2px solid $c-blue;
+  background-position: -1px -49px;
+}
+.select-wrapper{
+  position: relative;
+}
+.select{
+  position: absolute;
+  cursor: pointer;
+  background: $white;
+  border-radius: 3px;
+  width: 100%;
+  border: 1px solid $c-border;
+  overflow: hidden;
+  &:after{
+	content: '';
+	position: absolute;
+	top: 23px;
+	right: 20px;
+	width: 13px;
+	height: 6px;
+	background-image: url('images/select.png');
+	background-position: 0 0;
+  }
+  &.open{
+	border-color:transparent;
+	box-shadow: 0 2px 5px rgba(38, 97, 188, 0.2);
+	&:after{
+	  background-position: 0 -6px;
+	}
+  }
+  &__label{
+	color: $c-font-text;
+	font: 14px/50px "OpenSans";
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	height: 48px;
+  }
+  &__ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	background-color: $white;
+	z-index: 2;
+	position: relative;
+  }
+  &__item{
+	color: $c-font-text;
+	font: 14px/50px "OpenSans";
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	&:hover{
+	  background-color: $c-blue;
+	  color: $white;
+	}
+  }
+}
+input.checkbox{
+  display:none;
+
+  &+label{
+	cursor: pointer;
+	position: relative;
+	padding-left: 30px;
+	display: flex;
+
+	&::before{
+	  content: "";
+	  display: block;
+	  width: 16px;
+	  height: 16px;
+	  background: url(images/checkbox.png) no-repeat;
+	  position: absolute;
+	  top: 3px;
+	  left: 0;
+	}
+  }
+}
+
+input.checkbox + label::before {
+  background-position: 0 0;
+}
+
+input.checkbox:checked + label::before {
+  background-position: 0px -16px;
+}
+input.checkbox:checked + label{
+  color: $c-blue;
+}
+
+input.radio{
+  display:none;
+
+  &+label{
+	cursor: pointer;
+	position: relative;
+	padding-left: 30px;
+	display: flex;
+
+	&::before{
+	  content: "";
+	  display: block;
+	  width: 16px;
+	  height: 16px;
+	  background: url(images/radio.png) no-repeat;
+	  position: absolute;
+	  top: 3px;
+	  left: 0;
+	}
+  }
+
+  &_dis+label{
+	color: #adb5d4;
+  }
+  &_dis:checked+label{
+	color: $c-font-text;
+  }
+}
+
+input.radio + label::before {
+  background-position: 0px 0px;
+}
+
+input.radio:checked + label::before {
+  background-position: 0px -16px;
 }

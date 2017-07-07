@@ -1,0 +1,69 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = '';
+
+block title
+    title Оформление заявки
+
+block content
+    //workarea
+    .workarea
+        //.offer-page
+        .offer-page
+            //.container-lk
+            .container-lk
+                //.lk-block
+                .lk-block
+                    .req-block
+                        .req-block__head
+                            .req-block__inner
+                                a.req-block__back(href="#") Назад
+                                .req-block__btn
+                                    a.btn-del(href="#")
+                                .req-block__ttl.req-block__ttl_offer Оформление заявки
+                    //.reg-stage-wrapper
+                    .reg-stage-wrapper
+                        //.reg-stage
+                        .reg-stage
+                            .reg-stage__item.reg-stage__item_check Заявитель
+                            .reg-stage__item.reg-stage__item_check Объект
+                            .reg-stage__item.reg-stage__item_check Характеристики
+                            .reg-stage__item.reg-stage__item_check Расчет
+                            .reg-stage__item.reg-stage__item_check Документы
+                            .reg-stage__item.reg-stage__item_active Дополнения
+                        //end .reg-stage
+                    //end .reg-stage-wrapper
+                    //.offer-bl1
+                    .offer-bl1
+                        //.offer
+                        .offer
+                            .offer__ttl Дополнения
+                            form.offer__form
+                                .offer__form-bl
+                                    .form-row
+                                        .form-row__label ФИО контактного лица
+                                        .form-row__field
+                                            input.input.input_sm(type="text")
+                                    .form-row
+                                        .form-row__label Телефон
+                                        .form-row__field
+                                            input.input.input_sm(type="text")
+                                    .form-row
+                                        .form-row__label Комментарий к заявке
+                                        .form-row__field
+                                            input.input.input_sm(type="text")
+                                .offer__save-wrapper
+                                    .offer__recaptcha
+                                        img(src="images/TEMP/captcha.png")
+                                    .offer__save
+                                        input.submit.submit_save(type="submit" value="Сохранить")
+
+                        //end .offer
+                    //end .offer-bl1
+                //end .lk-block
+
+            //end .container-lk
+
+        //end .offer-page
+    //end workarea

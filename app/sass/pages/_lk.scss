@@ -122,6 +122,10 @@
 	font: 22px/36px "OpenSans";
 	color: $c-font-text;
 	margin-bottom: 4px;
+	&_offer{
+	  font: 30px/40px "OpenSansSemiBold";
+	  margin-bottom: 0;
+	}
 	&_mb10{
 	  margin-bottom: 10px;
 	}

@@ -1,0 +1,93 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = '';
+
+block title
+    title Оформление заявки
+
+block content
+    //workarea
+    .workarea
+        //.offer-page
+        .offer-page
+            //.container-lk
+            .container-lk
+                //.lk-block
+                .lk-block
+                    .req-block
+                        .req-block__head
+                            .req-block__inner
+                                a.req-block__back(href="#") Назад
+                                .req-block__btn
+                                    a.btn-del(href="#")
+                                .req-block__ttl.req-block__ttl_offer Оформление заявки
+                    //.reg-stage-wrapper
+                    .reg-stage-wrapper
+                        //.reg-stage
+                        .reg-stage
+                            .reg-stage__item.reg-stage__item_check Заявитель
+                            .reg-stage__item.reg-stage__item_active Объект
+                            .reg-stage__item Характеристики
+                            .reg-stage__item Расчет
+                            .reg-stage__item Документы
+                            .reg-stage__item Дополнения
+                        //end .reg-stage
+                    //end .reg-stage-wrapper
+                    //.offer-bl1
+                    .offer-bl2
+                        //.offer
+                        .offer
+                            .offer__ttl Сведения о подключаемом объекте
+                            form.offer__form
+                                .offer__form-bl
+                                    .form-row
+                                        .form-row__label Причина временного присоединения
+                                        .form-row__field
+                                            .radio-group.radio-group__offer
+                                                .radio-row
+                                                    input.radio(type="radio" id="r1" name="radio")
+                                                    label(for="r1") временное технологическое присоединение передвижного объекта
+                                                .radio-row
+                                                    input.radio(type="radio" id="r2" name="radio" checked)
+                                                    label(for="r2") другое
+                                            textarea.textarea.textarea_w
+                                    .form-row
+                                        .form-row__label Срок электроснабжения по временной схеме
+                                        .form-row__field
+                                            input.input.input_sm(type="text")
+                                    .form-row
+                                        .form-row__label Наименование энергоприн. устройств для присоединения
+                                        .form-row__field
+                                            textarea.textarea.textarea_w
+                                    .form-row
+                                        .form-row__label Адрес
+                                        .form-row__field
+                                            textarea.textarea.textarea_w
+                                    .form-row
+                                        .form-row__label Гарантирующий поставщик (энергосбытовая организация), с которым планируется заключение договора энергоснабжения (купли-продажи электрической энергии (мощности)
+                                        .form-row__field
+                                            textarea.textarea.textarea_w(style="height:140px;")
+                                    .form-row
+                                        .form-row__label Вид договора
+                                        .form-row__field
+                                            .select-wrapper
+                                                .select
+                                                    .select__label.js-select Договор электроснабжения
+                                                    ul.select__ul
+                                                        li.select__item.js-select-item Текст 1
+                                                        li.select__item.js-select-item Текст 2
+                                                        li.select__item.js-select-item Текст 3
+                                                    input.js-select-save(type="hidden")
+                                .offer__submit-wrapper
+                                    .offer__submit
+                                        input.submit(type="submit" value="Сохранить")
+
+                        //end .offer
+                    //end .offer-bl1
+                //end .lk-block
+
+            //end .container-lk
+
+        //end .offer-page
+    //end workarea

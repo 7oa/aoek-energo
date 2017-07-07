@@ -1,0 +1,62 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = '';
+
+block title
+    title Оформление заявки
+
+block content
+    //workarea
+    .workarea
+        //.offer-page
+        .offer-page
+            //.container-lk
+            .container-lk
+                //.lk-block
+                .lk-block
+                    .req-block
+                        .req-block__head
+                            .req-block__inner
+                                a.req-block__back(href="#") Назад
+                                .req-block__btn
+                                    a.btn-del(href="#")
+                                .req-block__ttl.req-block__ttl_offer Оформление заявки
+                    //.reg-stage-wrapper
+                    .reg-stage-wrapper
+                        //.reg-stage
+                        .reg-stage
+                            .reg-stage__item.reg-stage__item_check Заявитель
+                            .reg-stage__item.reg-stage__item_check Объект
+                            .reg-stage__item.reg-stage__item_check Характеристики
+                            .reg-stage__item.reg-stage__item_check Расчет
+                            .reg-stage__item.reg-stage__item_active Документы
+                            .reg-stage__item Дополнения
+                        //end .reg-stage
+                    //end .reg-stage-wrapper
+                    //.offer-bl1
+                    .offer-bl4
+                        //.offer
+                        .offer
+                            .offer__ttl Порядок расчета
+                            form.offer__form
+                                .offer__form-bl
+                                    .radio-group.radio-group__offer2
+                                        .radio-row
+                                            input.radio.radio_dis(type="radio" id="r1" name="radio")
+                                            label(for="r1") 15% платы за технологическое присоединение вносятся в течение 15 дней со дня заключения договора 30% в течение 60 дней со дня заключения договора, но не позже дня фактического присоединения 45% платы в течение 15 дней со дня фактического присоединения 10% платы в течение 15 дней со дня подписания акта об осуществлении технологического присоединения
+                                        .radio-row
+                                            input.radio.radio_dis(type="radio" id="r2" name="radio" checked)
+                                            label(for="r2") Авансовый платеж вносится в размере 5 процентов размера платы за тех. присоединение осуществляется беспроцентная рассрочка платежа в размере 95% платы за технологическое присоединение с условием ежеквартального внесения платы равными долями от общей суммы рассрочки на период до 3 лет со дня подписания сторонами акта об осуществлении технологического присоединения
+                                .offer__submit-wrapper
+                                    .offer__submit
+                                        input.submit(type="submit" value="Сохранить")
+
+                        //end .offer
+                    //end .offer-bl1
+                //end .lk-block
+
+            //end .container-lk
+
+        //end .offer-page
+    //end workarea

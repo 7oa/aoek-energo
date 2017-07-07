@@ -150,39 +150,6 @@ textarea{
 	color: $c-blue;
   }
 }
-
-input.checkbox{
-  display:none;
-
-  &+label{
-	cursor: pointer;
-	position: relative;
-	padding-left: 30px;
-	display: flex;
-
-	&::before{
-	  content: "";
-	  display: block;
-	  width: 16px;
-	  height: 16px;
-	  background: url(images/checkbox.png) no-repeat;
-	  position: absolute;
-	  top: 3px;
-	  left: 0;
-	}
-  }
-}
-
-input.checkbox + label::before {
-  background-position: 0px 0px;
-}
-
-input.checkbox:checked + label::before {
-  background-position: 0px -16px;
-}
-input.checkbox:checked + label{
-  color: $c-blue;
-}
 .docs-list{
   display: flex;
   flex-wrap: wrap;
@@ -197,9 +164,11 @@ input.checkbox:checked + label{
   box-sizing: border-box;
   color: $c-font-main;
   &__ttl{
+	display: block;
 	font: 14px/22px "OpenSans";
 	padding-right: 40px;
 	margin-bottom: 5px;
+	color: $c-font-main;
   }
   &__size{
 	font: 15px/25px "OpenSans";

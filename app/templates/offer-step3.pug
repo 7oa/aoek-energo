@@ -1,0 +1,85 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = '';
+
+block title
+    title Оформление заявки
+
+block content
+    //workarea
+    .workarea
+        //.offer-page
+        .offer-page
+            //.container-lk
+            .container-lk
+                //.lk-block
+                .lk-block
+                    .req-block
+                        .req-block__head
+                            .req-block__inner
+                                a.req-block__back(href="#") Назад
+                                .req-block__btn
+                                    a.btn-del(href="#")
+                                .req-block__ttl.req-block__ttl_offer Оформление заявки
+                    //.reg-stage-wrapper
+                    .reg-stage-wrapper
+                        //.reg-stage
+                        .reg-stage
+                            .reg-stage__item.reg-stage__item_check Заявитель
+                            .reg-stage__item.reg-stage__item_check Объект
+                            .reg-stage__item.reg-stage__item_active Характеристики
+                            .reg-stage__item Расчет
+                            .reg-stage__item Документы
+                            .reg-stage__item Дополнения
+                        //end .reg-stage
+                    //end .reg-stage-wrapper
+                    //.offer-bl1
+                    .offer-bl2
+                        //.offer
+                        .offer
+                            .offer__ttl Характеристики подключения
+                            form.offer__form
+                                .offer__form-bl
+                                    .form-row
+                                        .form-row__label Максимальная мощность, кВт
+                                        .form-row__field
+                                            input.input.input_sm(type="text")
+                                    .form-row
+                                        .form-row__label Уровень напряжения, кВ
+                                        .form-row__field
+                                            .select-wrapper
+                                                .select
+                                                    .select__label.js-select 11
+                                                    ul.select__ul
+                                                        li.select__item.js-select-item 12
+                                                        li.select__item.js-select-item 13
+                                                        li.select__item.js-select-item 14
+                                                    input.js-select-save(type="hidden")
+                                    .form-row
+                                        .form-row__label Характер нагрузки (вид  экономической деятельности)
+                                        .form-row__field
+                                            .select-wrapper
+                                                .select
+                                                    .select__label.js-select 11
+                                                    ul.select__ul
+                                                        li.select__item.js-select-item 12
+                                                        li.select__item.js-select-item 13
+                                                        li.select__item.js-select-item 14
+                                                    input.js-select-save(type="hidden")
+                                    .form-row
+                                        .form-row__label Реквизиты договора на технологическое присоединение
+                                        .form-row__field
+                                            input.input.input_sm(type="text")
+                                .offer__submit-wrapper
+                                    .offer__submit
+                                        input.submit(type="submit" value="Сохранить")
+
+                        //end .offer
+                    //end .offer-bl1
+                //end .lk-block
+
+            //end .container-lk
+
+        //end .offer-page
+    //end workarea

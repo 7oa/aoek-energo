@@ -1,0 +1,97 @@
+.offer-page{
+  padding-top: 34px;
+  background-color: #f6f9fc;
+  padding-bottom: 34px;
+}
+.reg-stage-wrapper{
+  padding: 11px 35px;
+  border-bottom: 1px solid $c-border;
+}
+.reg-stage{
+  display: flex;
+  font: 13px/22px "OpenSans";
+  &__item{
+	color: $c-font-gr;
+	margin-right: 21px;
+	display: flex;
+	&:before{
+	  content: '';
+	  width: 12px;
+	  height: 12px;
+	  display: block;
+	  background-image: url('images/rb.png');
+	  background-position: 0 0;
+	  background-repeat: no-repeat;
+	  margin-right: 5px;
+	  margin-top: 5px;
+	}
+	&_active{
+	  color: $c-blue;
+	  &:before{
+		background-position: 0 -12px;
+	  }
+
+	}
+	&_check{
+	  color: $c-blue;
+	  &:before{
+		background-position: 0 -24px;
+	  }
+
+	}
+  }
+}
+.offer-bl1{
+  padding: 53px 182px 58px 167px;
+}
+.offer-bl2{
+  padding: 53px 182px 58px 129px;
+}
+.offer-bl4{
+  padding: 53px 182px 58px 169px;
+}
+.offer{
+  &__ttl{
+	text-align: center;
+	font: 22px/36px "OpenSans";
+	margin-bottom: 34px;
+  }
+  &__submit-wrapper{
+	@include clearfix();
+  }
+  &__submit{
+	width: 170px;
+	float: right;
+  }
+  &__form-bl-ttl{
+	text-align: center;
+	margin-bottom: 27px;
+	font: 13px/20px "OpenSansSemiBold";
+  }
+  &__form-bl{
+	margin-bottom: 55px;
+  }
+  &__save-wrapper{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+  }
+  &__recaptcha{
+	margin-right: 32px;
+  }
+  &__save{
+	width: 170px;
+	flex: 0 0 auto;
+  }
+}
+.radio-group__offer{
+  font: 14px/20px "OpenSans";
+  padding-top: 14px;
+  margin-bottom: 24px;
+}
+.radio-group__offer2{
+  font: 14px/25px "OpenSans";
+}
+.radio-row{
+  margin-bottom: 20px;
+}
