@@ -140,18 +140,18 @@ gulp.task('serv_livereload', function() {
 });
 
 // Запуск сервера без лайврелоада
-gulp.task('serv_no_livereload', function() {
+/*gulp.task('serv_no_livereload', function() {
     connect.server({
         root: dest_path,
         port: 8888
     });
     opn('http://localhost:8888');
-});
+});*/
 
 
 // Задача по-умолчанию 
 gulp.task('default', ['serv_livereload', 'watch']);
 
 // Для ie
-gulp.task('serv', ['serv_no_livereload', 'watch']);
+//gulp.task('serv', ['serv_no_livereload', 'watch']);
 

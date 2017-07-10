@@ -38,16 +38,18 @@ block content
                     .offer-bl4
                         //.offer
                         .offer
-                            .offer__ttl Порядок расчета
+                            .offer__ttl Документация
                             form.offer__form
                                 .offer__form-bl
-                                    .radio-group.radio-group__offer2
-                                        .radio-row
-                                            input.radio.radio_dis(type="radio" id="r1" name="radio")
-                                            label(for="r1") 15% платы за технологическое присоединение вносятся в течение 15 дней со дня заключения договора 30% в течение 60 дней со дня заключения договора, но не позже дня фактического присоединения 45% платы в течение 15 дней со дня фактического присоединения 10% платы в течение 15 дней со дня подписания акта об осуществлении технологического присоединения
-                                        .radio-row
-                                            input.radio.radio_dis(type="radio" id="r2" name="radio" checked)
-                                            label(for="r2") Авансовый платеж вносится в размере 5 процентов размера платы за тех. присоединение осуществляется беспроцентная рассрочка платежа в размере 95% платы за технологическое присоединение с условием ежеквартального внесения платы равными долями от общей суммы рассрочки на период до 3 лет со дня подписания сторонами акта об осуществлении технологического присоединения
+                                    .file-upload-wrapper
+                                        .file-upload__ttl Приложите необходимые документы
+                                        .file-upload
+                                            input.file-upload__input(type="file" name="file")
+                                            .file-dummy
+                                                .success
+                                                    .inner Файл загружен
+                                                .default
+                                                    .inner Выберите файл
                                 .offer__submit-wrapper
                                     .offer__submit
                                         input.submit(type="submit" value="Сохранить")
