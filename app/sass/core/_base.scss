@@ -50,6 +50,10 @@ textarea{
 	position: absolute;
 	top: 13px;
 	margin-left: 17px;
+	transition: .5s;
+	&:hover{
+	  color: $white;
+	}
   }
 
   &__h1{
