@@ -98,6 +98,10 @@
 	width: 35px;
 	height: 35px;
 	margin-top: 4px;
+	display: block;
+	&:hover{
+	  background-position: 0 -35px;
+	}
   }
 
   &__content{
@@ -109,18 +113,14 @@
 	font-size: 15px;
 	color: $c-font-main;
 	margin-bottom: 2px;
+	display: block;
   }
 
   &__enter{
 	font-size: 11px;
 	color: $c-font-gr;
 	text-transform: uppercase;
-  }
-
-  &:hover{
-	.header-lk__avatar{
-	  background-position: 0 -35px;
-	}
+	display: block;
   }
 }
 
